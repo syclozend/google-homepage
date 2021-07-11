@@ -1,0 +1,146 @@
+
+        #container {
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        }
+        #nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 4px 8px 0px 0px;
+        }
+
+        #main{
+        min-height: 50%;
+        max-height: 70%;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        }
+        #footer{
+        margin-top: auto;
+        font-size: 90%;
+        padding: 18px 0 18px 0;
+        }
+        #myphoto {
+            width: 32px;
+            border-radius: 50%;
+        }
+        #logo {
+        margin-top: 2px;
+        margin-bottom: 25px;
+        }
+        #logo-div{
+
+        }
+        #search-input {
+            width: 100%;
+        }
+        #text-box {
+        border: none;
+        width: 100%;
+        height: 90%;
+        }
+        #text-box:focus {
+            outline: none;
+        }
+        #mic {
+        margin: 9px 15px 10px 10px;
+        background-color: red;
+        }
+        #search-bar {
+        margin-top: -1px;
+        border: 1px gainsboro solid;
+        border-radius: 50px;
+        width: 582px;
+        height: 44px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        }
+        #search-bar:hover {
+        box-shadow: 0px 1px 6px silver;
+        border: 1px white solid;
+        }
+        #search-icon {
+        opacity: 40%;
+        height: 20px;
+        margin: 12px 10px 10px 14px;
+        }
+
+        a,p {
+            text-decoration: none;
+            font-family: arial,sans-serif;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #nav-bar,
+        #nav-bar a:any-link{
+            color: #181818;
+        }
+        .navbar{
+        margin: 10px;
+        font-size: 80%;
+        }
+        #apps {
+        opacity: 50%;
+
+        }
+
+        #below-searchbar,
+        #below-searchbar a:any-link{
+             color: #404040;
+        }
+        #below-searchbar {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-self: center;
+        }
+
+        .b-s {
+            background-color: #F8F8F8;
+            padding: 10px 17px 10px 17px;
+            border-radius: 1px;
+            font-size: 88%;
+        }
+        #google-search {
+            margin-right: 6px;
+         }
+        #lucky {
+            margin-left: 6px;
+        }
+        #bangla {
+            font-size: 13px;
+            margin-top:31px;
+            color: #181818;
+        }
+        #bangladesh {
+             
+        }
+        #footer,  
+        #footer a:any-link{
+            color: grey;
+            background-color: whitesmoke;
+        }
+        #footer-stuff {
+        
+    }
+    #gmail{
+        margin: 0px 16px 3px 0px;
+    }
+
+    #images {
+        margin: 0px 17px 3px 0px;
+
+    }

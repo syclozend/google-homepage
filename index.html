@@ -1,141 +1,56 @@
 <!DOCTYPE html>
-
+<html>
 <head>
-    <style>
-        #container {
-            display: grid;
-            grid-template-rows: 1fr 5fr 1fr;
-            grid-template-columns:1fr 5fr 1fr;
-            grid-template-areas: 
-            "0 0 nav"
-            "main main main"
-            "footer footer footer"
-        }
-        #nav-bar{
-            grid-area: nav;
-            justify-self: end;
-        }
-        #main{
-            grid-area: main;
-          justify-self: center;
-          display: grid;
-          grid-template-rows: 3fr 2fr 2fr 1fr;
-          grid-template-columns: 1fr 2fr 2fr 1fr;
-          grid-template-areas: "0 logo logo 0"
-          "0 searchbar searchbar 0"
-          "0 below-searchbar below-searchbar 0"
-          "0 bangla bangla 0";
-        }
-        #footer{
-            grid-area: footer;
-        }
-
-
-
-
-        #myphoto {
-            width: 30px;
-            border-radius: 50%;
-        }
-        #logo {
-        }
-        #logo-div{
-            grid-area:logo;
-            justify-self: center;
-            align-self: start;
-        }
-        #search-input {
-            border: none;
-        }
-        #search-bar {
-            border-width: 5px;
-            border-color: grey;
-            border-style: box;
-            grid-area: searchbar;
-        }
-        a,p {
-            text-decoration: none;
-            font-family: arial,sans-serif;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        #nav-bar, #nav-bar a:visited{
-            color: black;
-        }
-        #below-searchbar {
-             grid-area: below-searchbar;
-        }
-        #below-searchbar, #below-searchbar a:visited {
-             color: #404040;
-             
-        }
-        .b-s {
-            background-color: #F0F0F0;
-            padding: 15px;
-            border-radius: 5%;
-        }
-        #bangla {
-             grid-area: bangla;
-        }
-        #bangladesh {
-             
-        }
-        #footer,#footer a:visited {
-            color: grey;
-            background-color: whitesmoke;
-        }
-        #footer-stuff {
-        
-        }
-    </style>
+<link href="reset.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
 <div id="container">
     <div id="nav-bar">
-        <a id="gmail" href="#">Gmail</a>
-        <a id="images" href="#">Images</a>
-        <a id="apps" href="#"><img src="images/apps.svg"></a>
-        <a id="photo" href="#"><img id="myphoto" src="images/myphoto.png"> </a>
+        <a class="navbar" id="gmail" href="#">Gmail</a>
+        <a class="navbar" id="images" href="#">Images</a>
+        <a class="navbar" id="apps" href="#"><img src="images/apps.svg"></a>
+        <a class="navbar" id="photo" href="#"><img id="myphoto" src="images/myphoto.png" alt="my photo"> </a>
     </div>
     <div id="main">
         <div id="logo-div">
     <img id="logo" src="images/googlelogo.png" alt="google logo">
     </div>
     <div id="search-bar">
-        <img src="images/search.svg">
-        <form>
-            <input id="search-input" type=text>
+        <img id="search-icon" src="images/search.svg" alt="search icon">
+        <form id="search-input">
+            <input id="text-box" type=text>
         </form>
-        <a href="#"><img src="images/mic.png"> </a>
+        <a href="#"><img id="mic" src="images/mic.png" alt="mic icon"> </a>
     </div>
     <div id="below-searchbar">
-        <a class="b-s" href="#">Google Search</a>
-        <a class="b-s" href="#">I'm Feeling Lucky</a>
+        <a id="google-search" class="b-s" href="#">Google Search</a>
+        <a id="lucky" class="b-s" href="#">I'm Feeling Lucky</a>
     </div>
     <div id="bangla">
-        <p>Google offered in: <a href="#">বাংলা</a></p>
+        <p class="footer">Google offered in: <a href="#"> ‎‎‏‏‎ ‎বাংলা</a></p>
     </div>
     </div>
     <div id="footer">
     <div id="bangladesh">
-        <p>Bangladesh</p>
+        <p class="footer">Bangladesh</p>
         <hr>
     </div>
     <div id=footer-stuff>
         <div id="left">
-        <a href="#">About</a>
-        <a href="#">Advertising</a>
-        <a href="#">Business</a>
-        <a href="#">How Search works</a>
+        <a class="footer" href="#">About</a>
+        <a class="footer" href="#">Advertising</a>
+        <a class="footer" href="#">Business</a>
+        <a class="footer" href="#">How Search works</a>
         </div>
         <div id="right">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Settings</a>
+        <a class="footer" href="#">Privacy</a>
+        <a class="footer" href="#">Terms</a>
+        <a class="footer" href="#">Settings</a>
         </div>
         </div>
         </div>
     </div>
 </body>
+</html>
