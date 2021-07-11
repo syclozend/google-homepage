@@ -8,6 +8,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
         }
         #nav-bar{
         display: flex;
@@ -29,7 +30,7 @@
         #footer{
         margin-top: auto;
         font-size: 90%;
-        padding: 18px 0 18px 0;
+        background-color: rgb(240,240,240);
         }
         #myphoto {
             width: 32px;
@@ -55,7 +56,6 @@
         }
         #mic {
         margin: 9px 15px 10px 10px;
-        background-color: red;
         }
         #search-bar {
         margin-top: -1px;
@@ -66,6 +66,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        max-width: 92%;
         }
         #search-bar:hover {
         box-shadow: 0px 1px 6px silver;
@@ -107,11 +108,14 @@
             flex-direction: row;
             justify-self: center;
         }
-
+        .b-s:hover {
+        text-decoration: none;
+        box-shadow: 0px 0px 2px #606060;
+        }
         .b-s {
             background-color: #F8F8F8;
             padding: 10px 17px 10px 17px;
-            border-radius: 1px;
+            border-radius: 4px;
             font-size: 88%;
         }
         #google-search {
@@ -126,21 +130,37 @@
             color: #181818;
         }
         #bangladesh {
-             
+            margin-left: 5px;
+            padding: 18px;
+            border-bottom: 1px  lightgrey solid ;
         }
         #footer,  
         #footer a:any-link{
             color: grey;
-            background-color: whitesmoke;
         }
         #footer-stuff {
-        
-    }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 20px 0 20px;
+        }
+        @media (max-width: 1200px){
+            #footer-stuff {
+                justify-content: space-around;
+            }
+        }
+        #right, #left{
+            display: flex;
+            justify-content: space-between;
+        }
+        #right > a, #left > a {
+            padding: 15px;
+        }
     #gmail{
         margin: 0px 16px 3px 0px;
     }
 
     #images {
         margin: 0px 17px 3px 0px;
-
     }
